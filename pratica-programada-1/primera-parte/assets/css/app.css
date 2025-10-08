@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Zalando Sans";
+  background: #1c114a;
+  background: linear-gradient(
+    160deg,
+    rgb(66, 0, 120) 0%,
+    rgb(40, 0, 72) 25%,
+    rgb(44, 1, 80) 75%,
+    rgb(25, 0, 62) 100%
+  );
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PT Serif";
+}
+
+.inline {
+  display: inline;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.login-container-wrapper {
+  display: flex;
+  width: 80%;
+  height: 600px;
+  background: #1c114a;
+  background: linear-gradient(
+    160deg,
+    rgba(123, 4, 235, 0.197) 0%,
+    rgba(105, 6, 211, 0.111) 50%,
+    rgba(82, 4, 199, 0.128) 100%
+  );
+  border: 1px solid #6102ae;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+.login-container-form {
+  width: 60%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #f3f3f3;
+}
+
+.login-container-form > h1 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 28px;
+  text-align: left;
+}
+
+.login-container-form > form {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+
+.login-container-form > form > div:nth-child(1) {
+  width: 50%;
+}
+
+.login-container-form > form > div:nth-child(2) {
+  width: 50%;
+}
+
+.login-container-form > form > div > div {
+  margin-bottom: 20px;
+}
+
+.one-line-2-inputs {
+  display: flex;
+  gap: 20px;
+}
+
+.one-line-2-inputs > div {
+  flex: 1;
+}
+
+.login-container-form > form > div > div > label,
+.one-line-2-inputs > div > label {
+  display: block;
+  margin-bottom: 10px;
+  color: #bda6d8;
+  font-weight: 600;
+}
+
+.login-container-form > form > div > div > input:not([type="checkbox"]),
+.login-container-form > form > div > div > select,
+.login-container-form > form > div > div > textarea,
+.one-line-2-inputs > div > input,
+.one-line-2-inputs > div > select,
+.one-line-2-inputs > div > textarea {
+  appearance: none;
+  border: none;
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #823bb443;
+  color: #f3f3f3;
+}
+
+.login-container-form > form > div > div > select,
+.login-container-form > form > div > div > input[type="checkbox"],
+.one-line-2-inputs > div > select {
+  appearance: auto;
+  min-width: 100%;
+}
+
+.login-container-form > form > div > div > input[type="checkbox"] {
+  min-width: auto;
+}
+
+.login-container-form > form > div > div > textarea {
+  height: 110px;
+}
+
+.login-container-form > div > button {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #950ae0;
+  color: #f3f3f3;
+  transition: all ease 0.3s;
+}
+
+.login-container-form > div > button:hover {
+  background-color: #a000f7;
+}
+
+.login-container-decoration {
+  width: 40%;
+  height: 100%;
+}
+
+.login-container-decoration {
+  background-color: #1e022484;
+  backdrop-filter: blur(15px);
+  border-radius: 8px;
+}
+
+.login-container-decoration > img {
+  max-width: 100%;
+  height: 100%;
+  padding: 80px;
+}

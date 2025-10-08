@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/pratica-programada-1/primera-parte/assets/css/app.css"
+    />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <main class="login-container">
+      <div class="login-container-wrapper">
+        <section class="login-container-form">
+          <h1>Iniciá Sesión</h1>
+          <form action="">
+            <div>
+              <div class="one-line-2-inputs">
+                <div>
+                  <label for="Nombre">Nombre</label>
+                  <input type="text" id="Nombre" name="Nombre" />
+                </div>
+
+                <div>
+                  <label for="Apellidos">Apellidos</label>
+                  <input type="text" id="Apellidos" name="Apellidos" />
+                </div>
+              </div>
+              <div class="one-line-2-inputs">
+                <div>
+                  <label for="pais">Pais</label>
+                  <select name="pais" id="pais">
+                    <option selected disabled>Pais</option>
+                    <option value="cr">Costa Rica</option>
+                    <option value="mx">México</option>
+                    <option value="us">Estados Unidos</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="provincia">Provincia</label>
+                  <select name="provincia" id="provincia">
+                    <option selected disabled>Provincia</option>
+                    <option value="cr">Provincia 1</option>
+                    <option value="mx">Provincia 2</option>
+                    <option value="us">Provincia 3</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label for="direccion">Dirección</label>
+                <textarea name="direccion" id="direccion"></textarea>
+              </div>
+            </div>
+            <div>
+              <div class="one-line-2-inputs">
+                <div>
+                  <label for="edad">Edad</label>
+                  <input type="text" id="edad" name="edad" />
+                </div>
+
+                <div>
+                  <label for="genero">Género</label>
+                  <select name="genero" id="genero">
+                    <option selected disabled>Género</option>
+                    <option value="f">Femenino</option>
+                    <option value="m">Masculino</option>
+                    <option value="na">Prefiero no decir</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label for="correo">Correo</label>
+                <input type="text" id="correo" name="correo" />
+              </div>
+              <div>
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" />
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="terminos_condiciones"
+                  name="terminos_condiciones"
+                  class="inline"
+                />
+                <span> Acepto terminos y condiciones</span>
+              </div>
+            </div>
+          </form>
+          <div>
+            <button>Iniciar Sesión</button>
+          </div>
+        </section>
+        <section class="login-container-decoration">
+          <img src="assets/icons/undraw_beach-day_cnsv.svg" alt="" srcset="" />
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
