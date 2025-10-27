@@ -15,6 +15,19 @@ const validateRequest = (formData) => {
       input.classList.remove("border-rose-500");
     }
 
+    const esNumero = parseFloat(value);
+    console.log(esNumero);
+
+    if (!isNaN(esNumero) && field !== "nota") {
+      input.classList.add("border-rose-500");
+      input.setAttribute("placeholder", "Este campo no puede ser numerico");
+      input.value = "";
+      isValid = false;
+      continue;
+    } else {
+      input.classList.remove("border-rose-500");
+    }
+
     if (field !== "nota") {
       continue;
     }
